@@ -23,7 +23,7 @@ public class Player {
 	}
         
         public void setBalance(int balance){ 
-            this.balance = balance+this.balance; 
+            this.balance = balance + this.balance; 
         }
 
 	public boolean balanceExceedsLimit() {
@@ -31,7 +31,7 @@ public class Player {
 	}
 	
 	public boolean balanceExceedsLimitBy(int amount) {
-		return (balance - amount > limit);
+		return (balance - amount >= limit);
 	}
 	
 	public void takeBet(int bet) {
